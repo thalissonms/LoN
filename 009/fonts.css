@@ -1,0 +1,19 @@
+@charset "utf-8";
+ @font-face {
+    font-family: 'allien';
+    src:url('ALIEN5.TTF') format('truetype');
+	src:url('ALIEN5.otf') format('opentype');
+}
+ @font-face {
+    font-family: 'adobegaramond';
+    src:url('Adobe%20Garamond%20Pro%20Regular.ttf') format('truetype');
+	src:url('Adobe%20Garamond%20Pro%20Regular.otf') format('opentype');
+}
+ @font-face {
+    font-family: 'Beaufort';
+	src:url('beaufortforlol-regular.otf') format('opentype');
+}
+ @font-face {
+    font-family: 'spiegelot';
+	src:url('spiegelot-regular.otf') format('opentype');
+}

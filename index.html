@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no">
+<link rel="stylesheet" type="text/css" href="006/style_css.css" />
+<link rel="stylesheet" type="text/css" href="006/style_css_mobile.css" />
+<link rel="stylesheet" type="text/css" href="009/fonts.css" />
+<title>League of News - Alpha 0.4</title>
+<script type="text/javascript" src="004/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="005/script.jsp"></script>
+
+<script>
+
+
+$(document).ready(function(e) {
+	
+	
+	  jQuery(window).load(function () {
+      $(".loader").fadeOut("slow"); //retire o delay quando for copiar!
+    $("#tudo_page").toggle("fast");
+});
+
+jQuery(function(){
+
+    jQuery("body").on("click", "ul.i-menu2 a", function(){
+
+        jQuery("#content").load( jQuery(this).attr("href") );
+
+        return false;
+
+    });
+
+});
+	
+		$("#menu2").hide();
+		$("#i-menu2").hide();
+		$("#logo2").hide();
+var nav = $("#top");
+$(window).scroll(function () {
+	if ($(this).scrollTop()> 20){
+		
+		$("#menu").fadeOut(400);
+		$("#i-menu").fadeOut(400);
+		$("#logo").fadeOut(400);
+		
+		$("#menu2").fadeIn(500);
+		$("#i-menu2").fadeIn(500);
+		$("#logo2").fadeIn(500);
+		
+		} else {
+		$("#menu").fadeIn(500);
+		$("#i-menu").fadeIn(500);
+		$("#logo").fadeIn(500);
+		
+		$("#menu2").fadeOut(400);
+		$("#i-menu2").fadeOut(400);
+		$("#logo2").fadeOut(400);
+			
+		}
+	
+});
+/*
+$("#bdi_1").hover(function(){
+	$("#bdi_1 img").attr("src", "008/bdi_1.jpg")
+	}, function(){			
+	$("#bdi_1 img").attr("src", "008/bdi_1a.jpg")	
+		})
+$("#bdi_2").hover(function(){
+	$("#bdi_2 img").attr("src", "008/bdi_2.jpg")
+	}, function(){			
+	$("#bdi_2 img").attr("src", "008/bdi_2a.jpg")	
+		})
+$("#bdi_3").hover(function(){
+	$("#bdi_3 img").attr("src", "008/bdi_3.jpg")
+	}, function(){			
+	$("#bdi_3 img").attr("src", "008/bdi_3a.jpg")	
+		})
+$("#bdi_4").hover(function(){
+	$("#bdi_4 img").attr("src", "008/bdi_4.jpg")
+	}, function(){			
+	$("#bdi_4 img").attr("src", "008/bdi_4a.jpg")	
+		})
+$("#bdi_5").hover(function(){
+	$("#bdi_5 img").attr("src", "008/bdi_5.jpg")
+	}, function(){			
+	$("#bdi_5 img").attr("src", "008/bdi_5a.jpg")	
+		}); 
+	*/	
+$("#smns").click(function(){
+	
+	$("#smns").attr("value", "");
+	$("#smns").css("color", "#333");
+	})	
+	
+	// REDE SOCIAIS DOS PLAYERS EFEITO OVER
+ $(".fb").hover(function(){ $(this).attr("src","007/ico/fbico.png")}, function(){$(this).attr("src","007/ico/fbicoa.png")});
+ $(".yt").hover(function(){ $(this).attr("src","007/ico/ytico.png")}, function(){$(this).attr("src","007/ico/yticoa.png")});
+ $(".tt").hover(function(){ $(this).attr("src","007/ico/ttico.png")}, function(){$(this).attr("src","007/ico/tticoa.png")});
+ $(".tc").hover(function(){ $(this).attr("src","007/ico/tcico.png")}, function(){$(this).attr("src","007/ico/tcicoa.png")});
+ $(".is").hover(function(){ $(this).attr("src","007/ico/isico.png")}, function(){$(this).attr("src","007/ico/isicoa.png")});
+ 
+});
+</script>
+
+
+</head>
+
+<body>
+<!--- MOBILE ITENS -->
+
+<div id="mb-menu">
+<img id="mb-menu-img" src="007/mb-menu.png"  />
+<img id="mb-logo" src="007/Logo.png" />
+</div>  
+ 
+<div id="loader" class="loader"></div>
+<div style="display:none" id="tudo_page">
+
+
+        <div id="i-menu">
+    <ul>
+     <li><a>Home</a></li>
+     <li><a>Noticias</a></li>
+     <li><a>MyTeam</a></li>
+     <li><a>ToLearn</a></li>
+     <li><a>Sobre</a></li>
+    </ul>
+    </div>
+	
+	<div id="menu"></div>
+	<img id="logo" src="007/Logo.png" />
+    
+
+        <div id="i-menu2">
+    <ul>
+     <li><a>Home</a></li>
+     <li><a href="bk.htm">Noticias</a></li>
+     <li><a>MyTeam</a></li>
+     <li><a>ToLearn</a></li>
+     <li><a>Sobre</a></li>
+    </ul>
+    </div>
+
+	<div id="menu2"></div>
+	<a href="index.html"><img id="logo2" src="007/Logo.png" /></a>
+<form id="summonerform" method="get" name="sn" action="summoner.php">
+	
+	<input id="smns" type="text" action="summoner.php" value="Nome do invocador..." name="smns"  />
+    
+    <select name="region">
+    <option value="BR1">BR</option>
+    <option value="EUN1">EUNE</option>
+    <option value="EUW1">EUW</option>
+    <option value="JP1">JP</option>
+    <option value="KR">KR</option>
+    <option value="LA1">LAN</option>
+	<option value="LA2">LAS</option>
+    <option value="NA1">NA</option>
+    <option value="OC1">OCE</option>
+    <option value="TR1">TR</option>
+    <option value="RU">RU</option>
+    </select>
+   <button type="submit" id="buscar-button"></button>
+</form>
+<div id="t-body"></div>
+<div id="body">
+	<h1>Destaques</h1>
+    <hr size="2" style="margin:auto;" color="#FFF"/>
+     <div id="bdi">
+    	<div id="bdi_1"><img src="008/bdi_1.jpg" width="100%"  /><h3>INTZ Quebra todas as expectativas e se classifica para o Mundial.</h3></div>
+    	<div id="bdi_2" class="bdi"><img src="008/bdi_2.jpg" /><h4>BRTT Apoia INTZ e Twitta frases de motivação para sua rival</h4></div>
+        <div id="bdi_3" class="bdi"><img src="008/bdi_3.jpg" /><h4>Titulo materia 3</h4></div>
+        <div id="bdi_4" class="bdi"><img src="008/bdi_4.jpg" /><h4>Titulo materia 4</h4></div>
+        <div id="bdi_5" class="bdi"><img src="008/bdi_5.jpg" /><h4>Titulo materia 5</h4></div>
+     </div>
+</div>
+<div id="strwho">
+	<h1>Stream List:</h1>
+    
+    <div class="sw">
+    <img class="sw_img" src="011/minerva.jpg" alt="Minerva" />
+    <h3>Minerva</h3>
+    <span class="sw_on"></span>
+	<ul>
+    <li><a class="sw_social" target="_blank" href="http://twitch.com/"><img class="tc" src="007/ico/tcicoa.png"/></a></li>
+    <li><a class="sw_social" target="_blank" href="http://twitter.com/"><img class="tt" src="007/ico/tticoa.png"/></a></li>
+    <li><a class="sw_social" target="_blank" href="http://facebook.com/"><img class="fb" src="007/ico/fbicoa.png"/></a></li>
+    <li><a class="sw_social" target="_blank" href="http://instagram.com/"><img class="is" src="007/ico/isicoa.png"/></a></li>
+    <li><a class="sw_social" target="_blank" href="http://youtube.com/"><img class="yt" src="007/ico/yticoa.png"/></a></li>
+    </ul>
+    <div class="playerelo"><img src="007/tiers/challenger.png" /><p>Desafiante</p></div>
+    </div>
+    
+    <div class="sw">
+    <img class="sw_img" src="011/kamikat.jpg" alt="KamiKat" />
+    <h3>KamiKat</h3>
+    <span class="sw_off"></span>
+	<ul>
+    <li><a class="sw_social" target="_blank" href="http://twitch.com/"><img class="tc" src="007/ico/tcicoa.png"/></a></li>
+    <li><a class="sw_social" target="_blank" href="http://twitter.com/"><img class="tt" src="007/ico/tticoa.png"/></a></li>
+    <li><a class="sw_social" target="_blank" href="http://facebook.com/"><img class="fb" src="007/ico/fbicoa.png"/></a></li>
+    <li><a class="sw_social" target="_blank" href="http://instagram.com/"><img class="is" src="007/ico/isicoa.png"/></a></li>
+    <li><a class="sw_social" target="_blank" href="http://youtube.com/"><img class="yt" src="007/ico/yticoa.png"/></a></li>
+    </ul>
+    <div class="playerelo"><img src="007/tiers/challenger.png" /><p>Desafiante</p></div>
+    </div>
+    
+    <div class="sw">
+    <img class="sw_img" src="011/brtt.jpg" alt="BrTT" />
+    <h3>BrTT</h3>
+    <span class="sw_on"></span>
+	<ul>
+    <li><a class="sw_social" target="_blank" href="http://twitch.com/"><img class="tc" src="007/ico/tcicoa.png"/></a></li>
+    <li><a class="sw_social" target="_blank" href="http://twitter.com/"><img class="tt" src="007/ico/tticoa.png"/></a></li>
+    <li><a class="sw_social" target="_blank" href="http://facebook.com/"><img class="fb" src="007/ico/fbicoa.png"/></a></li>
+    <li><a class="sw_social" target="_blank" href="http://instagram.com/"><img class="is" src="007/ico/isicoa.png"/></a></li>
+    <li><a class="sw_social" target="_blank" href="http://youtube.com/"><img class="yt" src="007/ico/yticoa.png"/></a></li>
+    </ul>
+    <div class="playerelo"><img src="007/tiers/challenger.png" /><p>Desafiante</p></div>
+    </div>
+    
+    <div class="sw">
+    <img class="sw_img" src="011/yoda.jpg" alt="YoDa" />
+    <h3>YoDa</h3>
+    <span class="sw_on"></span>
+	<ul>
+    <li><a class="sw_social" target="_blank" href="http://twitch.com/"><img class="tc" src="007/ico/tcicoa.png"/></a></li>
+    <li><a class="sw_social" target="_blank" href="http://twitter.com/"><img class="tt" src="007/ico/tticoa.png"/></a></li>
+    <li><a class="sw_social" target="_blank" href="http://facebook.com/"><img class="fb" src="007/ico/fbicoa.png"/></a></li>
+    <li><a class="sw_social" target="_blank" href="http://instagram.com/"><img class="is" src="007/ico/isicoa.png"/></a></li>
+    <li><a class="sw_social" target="_blank" href="http://youtube.com/"><img class="yt" src="007/ico/yticoa.png"/></a></li>
+    </ul>
+    <div class="playerelo"><img src="007/tiers/challenger.png" /><p>Desafiante</p></div>
+    </div>
+    
+    <div class="sw">
+    <img class="sw_img" src="011/pbo.jpg" alt="pbo" />
+    <h3>pbo</h3>
+    <span class="sw_off"></span>
+	<ul>
+    <li><a class="sw_social" target="_blank" href="http://twitch.com/"><img class="tc" src="007/ico/tcicoa.png"/></a></li>
+    <li><a class="sw_social" target="_blank" href="http://twitter.com/"><img class="tt" src="007/ico/tticoa.png"/></a></li>
+    <li><a class="sw_social" target="_blank" href="http://facebook.com/"><img class="fb" src="007/ico/fbicoa.png"/></a></li>
+    <li><a class="sw_social" target="_blank" href="http://instagram.com/"><img class="is" src="007/ico/isicoa.png"/></a></li>
+    <li><a class="sw_social" target="_blank" href="http://youtube.com/"><img class="yt" src="007/ico/yticoa.png"/></a></li>
+    </ul>
+    <div class="playerelo"><img src="007/tiers/challenger.png" /><p>Desafiante</p></div>
+    </div>
+</div>
+<div id="news">
+	<h1>Ultimas Noticias</h1>
+<table style="float:left;" width="5%" cellspacing="1">
+	<tr>
+		<th><div class="news"><img src="011/brtt.jpg" /><p>BrTT Anuncia saida da PaiN Gaming</p></div></th>
+		<th><div class="news"><p>Noticia de numero 7 </p></div></th>
+		<th><div class="news"><p>Noticia de numero 8 </p></div></th>
+		<th><div class="news"><p>Noticia de numero 9 </p></div></th>
+	</tr>
+	<tr>
+		<th><div class="news"><p>Noticia de numero 10 </p></div></th>
+		<th><div class="news"><p>Noticia de numero 11 </p></div></th>
+		<th><div class="news"><p>Noticia de numero 12 </p></div></th>
+		<th><div class="news"><p>Noticia de numero 13 </p></div></th>
+	</tr>
+</table>
+</div>
+</div>
+
+<!--^^^^^^^^^^^^ END ^^^^^^^^^^^^ -->
+<div id="rodape">
+<p id="right">© 2017 Thalisson M. Silva. All rights reserved. Thalisson M. Silva</p>
+<img style="float:right; margin-top:120px; margin-right:40px;" src="007/rodape-f.png" />
+<h1 id="ms-h1">Mapa do Site</h1><h1 id="sc-h1">Siga League of News nas redes sociais</h1>
+<div id="mapa-rp">
+<ul>
+	<li><a href="">- Inicio</a></li>
+    <li><a href="">- Meu Time</a></li>
+    <li><a href="">- Notícias</a></li>
+    <li><a href="">- Para Iniciantes</a></li>
+    <li><a href="">- Sobre</a></li>
+</ul>
+</div>
+
+<div id="social-rp">
+
+<ul>
+	<li><a href=""><img src="007/ico/fbicorp.png" /></a></li>
+    <li><a href=""><img src="007/ico/tticorp.png" /></a></li>
+    <li><a href=""><img src="007/ico/isicorp.png" /></a></li>
+    <li><a href=""><img src="007/ico/yticorp.png" /></a></li>
+</ul>
+</div>
+</div>
+</body>
+</html>

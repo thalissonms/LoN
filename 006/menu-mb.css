@@ -1,0 +1,25 @@
+@charset "utf-8";
+*{margin:0; padding:0;}
+
+body {}
+/* - Menu versão MB - */
+#error {width:100%; height:27px; background-color:#900; font-family:Arial; font-weight:bolder; color:#000; text-align:center; font-size:22px; padding-top:3px;
+display:none;}
+.close-error {position:absolute; width:15px; height:15px; right:15px; top:9px;}
+
+#menu-mb {width:100%; height:150px; background-color:#222; opacity:0.96;}
+#logo-sm {position:absolute; left:20px; width:135px; height:108px; top:20px;  z-index:2;}
+
+.btmenu {position:absolute; float:right; right:20px; width:120px; height:80px; margin-top:35px;}
+#menu-open {display:none;}
+#leteralbar-mb {position:absolute; right:0; z-index:9999; width:100%; height:200px; margin-top:-151px; top:300px; background-color:#333; display:none;}
+#down {position:relative; top:-150px;}
+
+#search-mn {position:absolute; width:100px; height:100px; float:right; top:30px; right:200px;}
+#mb-form {position:absolute; z-index:100; width:100%; height:120px; top:150px; right:0; background:#333; display:none;}
+#select-form {position:absolute; top:29.5px; left:3%; width:5%; height:50px; background-image:url(../007/searchbk-mb.png); border:none; font-family:Arial, Helvetica, sans-serif; font-size:22px; font-weight:bold; color:#666; text-align:center; -webkit-appearance: none; -moz-appearance: none; padding-left:8px; select::-ms-expand  text~indent:0.01px; text~overflow:"";}
+#input-form {position:absolute; width:77%; height:85px; top:12px; left:2%; border:none; border-radius:10px 0 0 10px;; font-family:Arial, Helvetica, sans-serif; font-size:52px; padding-left:7%; padding-right:2%;}
+#button-form {position:absolute; right:0; border:none; border-radius:0 10px 10px 0; background:url(../007/searchbk-mb.png); background-size:cover; width:10%; height:85px; top:12px; right:2%; font-family:Arial, Helvetica, sans-serif; font-size:22px; font-weight:bold; color:#666;}
+
+.input_update {display:none;}
+#enviar {background:url(../007/update_button_bk.png); width:90px; height:45px; border-radius:3px; border:none; box-shadow:0px 0px 5px #000; font-family:Adobe Garamond Pro; font-size:14px; color:#333; text-align:center; text-shadow:2px 0px 4px #BBB;}

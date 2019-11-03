@@ -1,0 +1,18 @@
+A parti de agora iremos trabalhar com versões de site. 
+Agora na versão Alpha 0.4a com inicio no dia 24/10/2017 vamos intruduzir um novo sistema de codigo de pastas para assim evitar nomes obvios
+A nova versão tambem conta com a gravação de dados em MySQL, assim gerando menos chamadas no servidores riot.
+Estes novos dados gravados em MySQL não será implementado nesta versão, somente na proxima (0.5).
+No fim da 0.3 coloquei uma nova area de informações para que assim eu possa esta sempre sabendo os dados brutos das contas para melhor pesquisa no developer riot games.
+Apos colocar esse novo metodo para pegar informações brutas eu me deparei com um bug que ja tinha vivenciado anteriomentem, o problema da ordem com que a riot me entrega as filas
+A versão Alpha 0.4a tem como objetivo tambem corrigir isto, construindo um codigo totalmente novo e mais pratico para alinhar estas informações.
+Um problema de designe que tenho que corrigir em uma versão proxima e sobre onde colocarei as informações sobre a fila Flex 3x3.
+
+Em resumo esta versão tem como prioridade adicionar/corrigir/melhorar:
+	[X]- Novo codigo de nome para pastas.
+	[ ]- Codigo de gravação de dados em MySQL
+	[X]- Corrigir bug que de ordem de fila
+	[ ]- Iniciar planejamento de onde colocar os itens faltantes da pagina summoner.php
+	[ ]- Alinhar index.php com a resolução 1920x1080
+	[ ]- Preparar trabalhos para proxima versão
+
+
