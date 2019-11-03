@@ -8,7 +8,7 @@ date_default_timezone_set('Brazil/East');
 $region = $_GET['region'];
 $summonerNameForm = $_GET['smns'];
 $idioma = "pt_BR";
-$apiKey = "RGAPI-0f88a5f9-0d43-42cc-a18e-03b72b70b279";
+$apiKey = "API_KEY_HERE";
 
 if($siteStatus == "1"){
 // Informações sobre ultima versão do Game
